@@ -5,11 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Hello World</h1>
-    <img src="img/pictures.jpeg" alt="pictures"/>
+    <div class="container">
+        <!-- header section starts  -->
+        <header class="header">
+            <nav class="navbar">
+                <ul class="menu-header-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="logo"><img src="/img/logo.svg" alt="Logo"></a>
+            <div class="social-icons">
+                <ul class="social-icons-list">
+                    <li><a href=""><img src="/img/twitter.svg" alt="twitter logo"></a></li>
+                    <li><a href=""><img src="/img/facebook.svg" alt="facebook logo"></a></li>
+                    <li><a href=""><img src="/img/linkedin.svg" alt="linkedin logo"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- header section ends -->
+
+        <!-- home section starts  -->
+        <main>
+            <section class="home">
+                <div class="background"></div>
+                <div class="content">
+                    <div class="text">
+                        <h1>The best products start with Figma</h1>
+                        <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
+                    </div>
+                    <button class="button">Try For Free</button>
+                </div>
+            </section>
+            <section class="features">
+                <div class="content">
+                    <div class="text">
+                        <h2>Features</h2>
+                        <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
+                    </div>
+                    <div class="block-items">
+                        <div class="flex">
+                            <div class="item">
+                                <img src="/img/Vector-1.svg" alt="vector">
+                                <h3>OpenType features Variable fonts</h3>
+                                <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                            </div>
+                            <div class="item">
+                                <img src="/img/Vector-2.svg" alt="vector">
+                                <h3>Design with real data</h3>
+                                <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                            </div>
+                            <div class="item">
+                                <img src="/img/Vector-3.svg" alt="vector">
+                                <h3>Fastest way to take action</h3>
+                                <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-video">
+                        <video autoplay="" loop="" muted="" aria-hidden="" preload="auto" playsinline="" poster="posterimage.svg" controls>
+                            <source src="//theme.zdassets.com/theme_assets/9325143/d8f0d96a281421cb7615665b0d404912590abb51.webm" type="video/webm">,
+                            <source src="//theme.zdassets.com/theme_assets/9325143/0b00b82d681282b4b3c8869a4ae04702745ed66c.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+            <section></section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

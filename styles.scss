@@ -1,0 +1,274 @@
+$fontFamily: 'Poppins', sans-serif;
+$fontSize: 16px;
+
+$mainColor: black;
+$primary: #2091F9;
+$primaryHover: #157fe3;
+$btnDisabledColor: #B4B4B4;
+$btnDisabledGray: #EDEDED;
+
+$minWidth: 320px;
+$maxWidth: 1640px;
+$maxWidthContainer: 1280px;
+$heightHeader: 156px;
+$heightFooter: 1280px;
+
+/* Reset css*/
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+html,
+body {
+	height: 100%;
+	min-width: $minWidth;
+}
+body {
+	color: $mainColor;
+	line-height: 1;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+}
+input,
+button,
+textarea {
+	font-family: $fontFamily;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+  
+html {
+	font-size: $fontSize;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+}
+.button {
+	width: 100%;
+	min-width: max-content !important;
+	max-width: 220px;
+	height: 48px;
+	background: $primary;;
+	color: white;
+	border-radius: 25px !important;
+	transition: all 0.4s ease-out !important;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	&:hover {
+	  background: $primaryHover;
+	  box-shadow: 10px 5px 5px rgb(239, 239, 239);
+	}
+	&:disabled {
+	  cursor: not-allowed;
+	  background: $btnDisabledGray!important;
+	  color: $btnDisabledColor!important;
+	}
+}
+.btn-sm {
+	max-width: 145px;
+}
+.btn-ml {
+	max-width: 255px;
+}
+.btn-l {
+	width: 200px;
+}
+h1 {
+	font-size: 65px;
+	line-height: 80px;
+	letter-spacing: .2px;
+	font-weight: 700;
+	padding: 10px;
+}
+h2 {
+	font-size: 43px;
+	line-height: 50px;
+	letter-spacing: .2px;
+	font-weight: 500;
+	padding: 10px;
+}
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: .2px;
+	font-weight: 500;
+	padding: 10px;
+}
+h4 {
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: .2px;
+	font-weight: 300;
+	padding: 10px;
+}
+p {
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: .2px;
+	font-weight: 200;
+	padding: 10px;
+}
+video {
+	max-width: 800px;
+	width: 100%;
+	height: auto;
+	box-shadow: 7px 4px 37px 13px rgba(154, 147, 140, 0.5), 7px 4px 29px 6px rgb(233, 227, 227);
+}
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.container {
+	max-width: $maxWidthContainer;
+	padding: 0 15px;;
+	margin: 0 auto;
+}
+header {
+	max-width: 1120px;
+	width: 100%;
+	margin: 0 auto;
+	height: $heightHeader;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.menu-header-list {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	li {
+		font-size: 15px;
+		line-height: 28px;
+		letter-spacing: .2px;
+		font-weight: 200;
+		padding: 10px;
+	}
+}
+.logo {
+	flex: 1 1 0;
+	margin: 0 25px;
+	img {
+		width: 186px;
+		height: auto;
+	}
+}
+.social-icons-list {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.home {
+	display: flex;
+    align-items: center;
+	.background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100vw;
+		min-height: 100vh;
+		z-index: -1;
+		background: url(img/background.svg) no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.content {
+		max-width: 786px;
+		height: calc(100vh - $heightHeader);
+		padding: 70px 0;
+		margin: 0 auto;
+		color: white;
+		text-align: center;
+		.text {
+			padding: 20px;
+			h4 {
+				margin-top: 7px;
+			}
+		}
+		button {
+			margin: 45px 20px;
+		}
+	}
+}
+.features {
+	width: 100%;
+	.content {
+		margin: 75px auto;
+		text-align: center;
+		.text {
+			max-width: 550px;
+			padding: 20px;
+			margin: 0 auto;
+			h4 {
+				margin-top: 7px;
+			}
+		}
+		.block-items {
+			max-width: 870px;
+			margin: 75px auto;
+			.item {
+				width: 29%;
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				img {
+					max-width: 60px;
+					height: auto;
+					margin: 0 auto;;
+				}
+			}
+		}
+		.block-video {
+			padding: 50px 0;
+		}
+	}
+}
