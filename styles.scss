@@ -2,12 +2,13 @@ $fontFamily: 'Poppins', sans-serif;
 $fontSize: 16px;
 
 $mainColor: #252B42;
+$darkBlueColor: #252B42;
 $primary: #2091F9;
 $primaryHover: #157fe3;
 $btnDisabledColor: #B4B4B4;
 $btnDisabledGray: #EDEDED;
 $inputBackground: #F4F4F4;
-$inputBorder: #E8E8E8;
+$borderColor: #E8E8E8;
 
 $minWidth: 320px;
 $maxWidth: 1640px;
@@ -101,12 +102,14 @@ html {
 	line-height: 48px;
 	text-align: center;
 	&--primary {
-		background: $primary;;
+		background: $primary;
 		color: white;
 	}
 	&:hover {
-	  background: $primaryHover;
-	  box-shadow: 10px 5px 5px rgb(239, 239, 239);
+		background: white;
+		color: $primary;
+		border: 1px solid $primary;
+	  	box-shadow: 10px 5px 5px #2090f96c;
 	}
 	&:disabled {
 	  cursor: not-allowed;
@@ -117,20 +120,16 @@ html {
 .btn-sm {
 	max-width: 145px;
 }
-.btn-ml {
+.btn-m {
 	max-width: 170px;
 	font-weight: 200;
 	font-size: 16px;
 }
-.btn-l {
-	width: 200px;
+.btn-ml {
+	max-width: 255px;
 }
-h3 {
-	font-size: 18px;
-	line-height: 24px;
-	letter-spacing: .2px;
-	font-weight: 500;
-	padding: 10px;
+.btn-l {
+	max-width: 275px;
 }
 .flex {
 	display: flex;
@@ -394,7 +393,7 @@ h3 {
 		max-width: 270px;
 		height: 48px;
 		border-radius: 25px;
-		border-color: $inputBorder;
+		border-color: $borderColor;
 		font-weight: 300;
 		font-size: 14px;
 		line-height: 48px;
@@ -407,4 +406,211 @@ h3 {
 .partners {
 	width: 100%;
 	padding: 80px 0;
+	&__content {
+		max-width: 1075px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 80px;
+	}
+	&__header {
+		max-width: 550px;
+		padding-top: 30px;
+	}
+	&__title {
+		font-size: 45px;
+		line-height: 50px;
+		letter-spacing: .2px;
+		font-weight: 400;
+		padding: 10px;
+	}
+	&__subtitle {
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: .2px;
+		font-weight: 300;
+		padding: 10px;
+	}
+}
+.companies-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	&__company {
+		padding: 30px 38px;
+		border: 1px solid $borderColor;
+	}
+	&__title {
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: .2px;
+		font-weight: 300;
+		margin-bottom: 15px;
+	}
+}
+.testimonials {
+	width: 100%;
+	padding: 100px 0;
+	&__content {
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 80px;
+	}
+	&__title {
+		font-size: 45px;
+		line-height: 50px;
+		letter-spacing: .2px;
+		font-weight: 400;
+		padding: 10px;
+	}
+	&__main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+	&__logo {
+		max-width: 150px;
+	}
+	&__subtitle {
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: .2px;
+		font-weight: 300;
+		padding: 10px;
+	}
+	&__user-container {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: .2px;
+		font-weight: 300;
+		text-align: left;
+	}
+}
+.pricing {
+	width: 100%;
+	padding: 100px 0;
+	background-color: $darkBlueColor;
+	position: absolute;
+    left: 0;
+	&__content {
+		max-width: 1100px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 80px;
+	}
+	&__header {
+		max-width: 500px;
+		color: white;
+	}
+	&__title {
+		font-size: 45px;
+		line-height: 50px;
+		letter-spacing: .2px;
+		font-weight: 400;
+		padding: 10px;
+	}
+	&__subtitle {
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: .2px;
+		font-weight: 300;
+		padding: 10px;
+		margin-top: 7px;
+	}
+	&__options {
+		width: 100%;
+		min-height: 635px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.payment-option {
+	&__container {
+		transition: all 0.4s ease-out;
+		background: white;
+		overflow: hidden;
+    	border-radius: 12px;
+		padding: 40px;
+		max-width: 335px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+	&__container:hover {
+		transition: all 0.4s ease-out;
+		background: $primary;
+		color: white;
+		padding: 80px 0;
+		.button {
+			&--primary {
+				background: white;
+				color: $primary;
+				border: 1px solid $primary
+			}
+		}
+	}
+	&__title {
+		font-size: 18px;
+		line-height: 30px;
+		letter-spacing: .2px;
+		font-weight: 800;
+	}
+	&__subtitle {
+		margin: 0 auto;
+		max-width: 150px;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: .2px;
+		font-weight: 300;
+	}
+	&__price {
+		max-width: 200px;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	&__amount {
+		font-size: 77px;
+		font-weight: 800;
+	}
+	&__description {
+		font-weight: 300;
+		font-size: 14px;
+		text-align: left;
+		span {
+			line-height: 26px;
+			font-weight: 600;
+			font-size: 22px;
+		}
+	}
+}
+.payment-option__list {
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: .2px;
+	font-weight: 300;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
 }

@@ -104,8 +104,10 @@ html {
   color: white;
 }
 .button:hover {
-  background: #157fe3;
-  box-shadow: 10px 5px 5px rgb(239, 239, 239);
+  background: white;
+  color: #2091F9;
+  border: 1px solid #2091F9;
+  box-shadow: 10px 5px 5px rgba(32, 144, 249, 0.4235294118);
 }
 .button:disabled {
   cursor: not-allowed;
@@ -117,22 +119,18 @@ html {
   max-width: 145px;
 }
 
-.btn-ml {
+.btn-m {
   max-width: 170px;
   font-weight: 200;
   font-size: 16px;
 }
 
-.btn-l {
-  width: 200px;
+.btn-ml {
+  max-width: 255px;
 }
 
-h3 {
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  font-weight: 500;
-  padding: 10px;
+.btn-l {
+  max-width: 275px;
 }
 
 .flex {
@@ -420,4 +418,212 @@ h3 {
 .partners {
   width: 100%;
   padding: 80px 0;
+}
+.partners__content {
+  max-width: 1075px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.partners__header {
+  max-width: 550px;
+  padding-top: 30px;
+}
+.partners__title {
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  padding: 10px;
+}
+.partners__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.companies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.companies-list__company {
+  padding: 30px 38px;
+  border: 1px solid #E8E8E8;
+}
+.companies-list__title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.testimonials {
+  width: 100%;
+  padding: 100px 0;
+}
+.testimonials__content {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.testimonials__title {
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  padding: 10px;
+}
+.testimonials__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.testimonials__logo {
+  max-width: 150px;
+}
+.testimonials__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  padding: 10px;
+}
+.testimonials__user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testimonials__text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.pricing {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #252B42;
+  position: absolute;
+  left: 0;
+}
+.pricing__content {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.pricing__header {
+  max-width: 500px;
+  color: white;
+}
+.pricing__title {
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  padding: 10px;
+}
+.pricing__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  padding: 10px;
+  margin-top: 7px;
+}
+.pricing__options {
+  width: 100%;
+  min-height: 635px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-option__container {
+  transition: all 0.4s ease-out;
+  background: white;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 335px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.payment-option__container:hover {
+  transition: all 0.4s ease-out;
+  background: #2091F9;
+  color: white;
+  padding: 80px 0;
+}
+.payment-option__container:hover .button--primary {
+  background: white;
+  color: #2091F9;
+  border: 1px solid #2091F9;
+}
+.payment-option__title {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  font-weight: 800;
+}
+.payment-option__subtitle {
+  margin: 0 auto;
+  max-width: 150px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+}
+.payment-option__price {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.payment-option__amount {
+  font-size: 77px;
+  font-weight: 800;
+}
+.payment-option__description {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: left;
+}
+.payment-option__description span {
+  line-height: 26px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.payment-option__list {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }/*# sourceMappingURL=styles.css.map */
