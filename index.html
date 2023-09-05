@@ -4,85 +4,259 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Figmaland</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="container">
         <!-- header section starts  -->
         <header class="header">
-            <nav class="navbar">
-                <ul class="menu-header-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+            <nav class="header__nav">
+                <button class="header__burger-menu" type="button" hidden>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="#home">Home</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#product">Product</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#pricing">Pricing</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#about">About</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#" class="logo"><img src="img/logo.svg" alt="Logo"></a>
-            <div class="social-icons">
-                <ul class="social-icons-list">
-                    <li><a href="#"><img src="img/twitter.svg" alt="twitter logo"></a></li>
-                    <li><a href="#"><img src="img/facebook.svg" alt="facebook logo"></a></li>
-                    <li><a href="#"><img src="img/linkedin.svg" alt="linkedin logo"></a></li>
+            <div class="header__logo-container">
+                <a href="#" class="header__logo-image"><img src="img/logo.svg" alt="Logo"></a>
+            </div>
+            <div class="header__social-icons social-icons">
+                <ul class="social-icons__list">
+                    <li class="social-icons__item">
+                        <a class="social-icons__link" href="#"><img src="img/twitter-icon.svg" alt="twitter logo"></a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a class="social-icons__link" href="#"><img src="img/facebook-icon.svg" alt="facebook logo"></a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a class="social-icons__link" href="#"><img src="img/linkedin-icon.svg" alt="linkedin logo"></a>
+                    </li>
                 </ul>
             </div>
         </header>
         <!-- header section ends -->
 
-        <!-- home section starts  -->
-        <main>
-            <section class="home">
-                <div class="background"></div>
-                <div class="content">
-                    <div class="text">
-                        <h1>The best products start with Figma</h1>
-                        <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
+        <!-- main section starts  -->
+        <main class="main">
+            <!-- home section starts  -->
+            <section id="home" class="home">
+                <div class="home__background"></div>
+                <div class="home__content">
+                    <div class="home__text">
+                        <h1 class="home__title">The best products start with Figma</h1>
+                        <p class="home__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
                     </div>
-                    <button class="button">Try For Free</button>
+                    <a class="home__button button button--primary">Try For Free</a>
                 </div>
             </section>
-            <section class="features">
-                <div class="content">
-                    <div class="text">
-                        <h2>Features</h2>
-                        <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
+            <!-- home section ends  -->
+
+            <!-- features section starts  -->
+            <section id="product" class="features">
+                <div class="features__content">
+                    <div class="features__header">
+                        <h2 class="features__title">Features</h2>
+                        <p class="features__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
                     </div>
-                    <div class="block-items">
-                        <div class="flex">
-                            <div class="item">
-                                <img src="img/Vector-1.svg" alt="vector">
-                                <h3>OpenType features Variable fonts</h3>
-                                <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/Vector-2.svg" alt="vector">
-                                <h3>Design with real data</h3>
-                                <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/Vector-3.svg" alt="vector">
-                                <h3>Fastest way to take action</h3>
-                                <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                            </div>
+                    <div class="features__items-container flex">
+                        <div class="features__item">
+                            <img src="img/features-figures.svg" alt="vector" class="features__icon">
+                            <h3 class="features__item-title">OpenType features Variable fonts</h3>
+                            <p class="features__item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        </div>
+                        <div class="features__item">
+                            <img src="img/features-pencil.svg" alt="vector" class="features__icon">
+                            <h3 class="features__item-title">Design with real data</h3>
+                            <p class="features__item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        </div>
+                        <div class="features__item">
+                            <img src="img/features-pen.svg" alt="vector" class="features__icon">
+                            <h3 class="features__item-title">Fastest way to take action</h3>
+                            <p class="features__item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
                         </div>
                     </div>
-                    <div class="block-video">
-                        <video autoplay="" loop="" muted="" aria-hidden="" preload="auto" playsinline="" poster="posterimage.svg" controls>
-                            <source src="https://theme.zdassets.com/theme_assets/9325143/d8f0d96a281421cb7615665b0d404912590abb51.webm" type="video/webm">,
-                            <source src="https://theme.zdassets.com/theme_assets/9325143/0b00b82d681282b4b3c8869a4ae04702745ed66c.mp4" type="video/mp4">
-                        </video>
+                </div>
+                <div class="features__video">
+                    <video autoplay="" loop="" muted="" aria-hidden="" preload="auto" playsinline="" poster="posterimage.svg" controls class="features__video-element">
+                        <source src="https://theme.zdassets.com/theme_assets/9325143/d8f0d96a281421cb7615665b0d404912590abb51.webm" type="video/webm">
+                        <source src="https://theme.zdassets.com/theme_assets/9325143/0b00b82d681282b4b3c8869a4ae04702745ed66c.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+
+            <!-- organize section starts  -->
+            <section class="organize">
+                <div class="organize__content">
+                    <div class="organize__header">
+                        <div class="organize__text">
+                            <h2 class="organize__title">Fastest way to organize</h2>
+                            <p class="organize__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                        </div>
+                        <a class="organize__button button button--primary">Try For Free</a>
+                    </div>
+                    <div class="organize__icon-container">
+                        <img src="img/macbook-pro-icon.svg" alt="Macbook Pro Icon" class="organize__icon">
                     </div>
                 </div>
             </section>
+            <!-- organize section ends  -->
+
+            <!-- subscribe section starts  -->
+            <section class="subscribe">
+                <div class="subscribe__content">
+                    <div class="subscribe__icon-container">
+                        <img src="img/subscribe-pictures.svg" alt="Letter" class="subscribe__icon">
+                    </div>
+                    <div class="subscribe__header">
+                        <div class="subscribe__text">
+                            <p class="subscribe__subtitle">At your fingertips</p>
+                            <h2 class="subscribe__title">Lightning fast prototyping</h2>
+                        </div>
+                        <div class="subscribe__form form-subscribe">
+                            <p class="form-subscribe__title">Subscribe to our Newsletter</p>
+                            <p class="form-subscribe__subtitle">Available exclusivery on Figmaland</p>
+                            <form action="https://formspree.io/f/maygjpyb" method="post" class="form-subscribe__form">
+                                <input name="Email" id="email" type="email" placeholder="Your email" required class="form-subscribe__input">
+                                <button type="submit" class="form-subscribe__button button btn-ml button--primary">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- subscribe section ends  -->
+
+            <!-- partners section starts  -->
+            <section id="about" class="partners">
+                <div class="partners__content">
+                    <div class="partners__header">
+                        <h2 class="partners__title">Partners</h2>
+                        <p class="partners__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                    </div>
+                </div>
+            </section>
+            <!-- partners section ends  -->
+
+            <!-- testimonials section starts  -->
             <section></section>
+            <!-- testimonials section ends  -->
+
+            <!-- pricing section starts  -->
+            <section id="pricing"></section>
+            <!-- pricing section ends  -->
+
+            <!-- contact section starts  -->
+            <section id="contact"></section>
+            <!-- contact section ends  -->
         </main>
-        <footer></footer>
+        <!-- main section ends  -->
+
+        <!-- footer section starts  -->
+        <footer class="footer">
+            <div class="footer__container">
+              <div class="footer__column">
+                    <h3 class="footer__column-title">Pages</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item">
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#product" class="footer__link">Product</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#pricing" class="footer__link">Pricing</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+              </div>
+              <div class="footer__column">
+                    <h3 class="footer__column-title">Tomothy</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Eleanor Edwards</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Ted Robertson</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Annette Russell</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Jennie Mckinney</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Gloria Richards</a>
+                        </li>
+                    </ul>
+              </div>
+              <div class="footer__column">
+                    <h3 class="footer__column-title">Jane Black</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Philip Jones</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Product</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Colleen Russell</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Marvin Hawkins</a>
+                        </li>
+                        <li class="footer__link-item">
+                            <a href="#" class="footer__link">Bruce Simmmons</a>
+                        </li>
+                    </ul>
+              </div>
+              <div class="footer__column">
+                <div class="footer__contacts">
+                    <div class="footer__adress-icon">
+                        <img src="img/location-vector.svg" alt="Location icon">
+                    </div>
+                    <div class="footer__adress-text">7480 Mockingbird Hill undefined</div>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__tel-icon">
+                        <img src="img/phone-vector.svg" alt="Phone icon">
+                    </div>
+                    <div class="footer__tel-number">
+                        <a href="tel:+2395550108">(239) 555-0108</a>
+                    </div>
+                </div>
+                <div class="footer__contacts social-icons">
+                    <ul class="social-icons__list">
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" href="#"><img src="img/twitter-icon.svg" alt="twitter logo"></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" href="#"><img src="img/facebook-icon.svg" alt="facebook logo"></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" href="#"><img src="img/linkedin-icon.svg" alt="linkedin logo"></a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </footer>
+        <!-- footer section ends -->
     </div>
     <script src="js/script.js"></script>
 </body>
