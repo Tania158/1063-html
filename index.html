@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- header section starts  -->
-        <header class="header">
+    <!-- header section starts  -->
+    <header class="header">
+        <div class="header__container">
             <nav class="header__nav">
                 <button class="header__burger-menu" type="button" hidden>
                     <span class="header__burger-line"></span>
@@ -35,332 +35,396 @@
             <div class="header__social-icons social-icons">
                 <ul class="social-icons__list">
                     <li class="social-icons__item">
-                        <a class="social-icons__link" href="#"><img src="img/twitter-icon.svg" alt="twitter logo"></a>
+                        <a class="social-icons__link" href="https://twitter.com/" target="_blank"><img src="img/twitter-icon.svg" alt="twitter logo"></a>
                     </li>
                     <li class="social-icons__item">
-                        <a class="social-icons__link" href="#"><img src="img/facebook-icon.svg" alt="facebook logo"></a>
+                        <a class="social-icons__link" href="https://www.facebook.com/" target="_blank"><img src="img/facebook-icon.svg" alt="facebook logo"></a>
                     </li>
                     <li class="social-icons__item">
-                        <a class="social-icons__link" href="#"><img src="img/linkedin-icon.svg" alt="linkedin logo"></a>
+                        <a class="social-icons__link" href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin-icon.svg" alt="linkedin logo"></a>
                     </li>
                 </ul>
             </div>
-        </header>
-        <!-- header section ends -->
+        </div>
+    </header>
+    <!-- header section ends -->
 
-        <!-- main section starts  -->
-        <main class="main">
-            <!-- home section starts  -->
-            <section id="home" class="home">
-                <div class="home__background"></div>
-                <div class="home__content">
-                    <div class="home__text">
-                        <h1 class="home__title">The best products start with Figma</h1>
-                        <p class="home__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
-                    </div>
-                    <a href="#" class="home__button button button--primary">Try For Free</a>
+    <!-- main section starts  -->
+    <main class="main">
+        <!-- home section starts  -->
+        <section id="home" class="home">
+            <div class="home__background"></div>
+            <div class="home__content">
+                <div class="home__text">
+                    <h1 class="home__title">The best products start with Figma</h1>
+                    <p class="home__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
                 </div>
-            </section>
-            <!-- home section ends  -->
+                <a href="#" class="home__button button button--primary">Try For Free</a>
+            </div>
+        </section>
+        <!-- home section ends  -->
 
-            <!-- features section starts  -->
-            <section id="product" class="features">
-                <div class="features__content">
-                    <div class="features__header">
-                        <h2 class="features__title">Features</h2>
-                        <p class="features__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
-                    </div>
-                    <div class="features__items-container flex">
-                        <div class="features__item">
-                            <img src="img/features-figures.svg" alt="vector" class="features__icon">
-                            <h3 class="features__item-title">OpenType features Variable fonts</h3>
-                            <p class="features__item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                        </div>
-                        <div class="features__item">
-                            <img src="img/features-pencil.svg" alt="vector" class="features__icon">
-                            <h3 class="features__item-title">Design with real data</h3>
-                            <p class="features__item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                        </div>
-                        <div class="features__item">
-                            <img src="img/features-pen.svg" alt="vector" class="features__icon">
-                            <h3 class="features__item-title">Fastest way to take action</h3>
-                            <p class="features__item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                        </div>
-                    </div>
+        <!-- features section starts  -->
+        <section id="product" class="features">
+            <div class="features__content">
+                <div class="features__header">
+                    <h2 class="features__title">Features</h2>
+                    <p class="features__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
                 </div>
-                <div class="features__video">
-                    <video autoplay="" loop="" muted="" aria-hidden="" preload="auto" playsinline="" poster="posterimage.svg" controls class="features__video-element">
-                        <source src="https://theme.zdassets.com/theme_assets/9325143/d8f0d96a281421cb7615665b0d404912590abb51.webm" type="video/webm">
-                        <source src="https://theme.zdassets.com/theme_assets/9325143/0b00b82d681282b4b3c8869a4ae04702745ed66c.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </section>
-
-            <!-- organize section starts  -->
-            <section class="organize">
-                <div class="organize__content">
-                    <div class="organize__header">
-                        <div class="organize__text">
-                            <h2 class="organize__title">Fastest way to organize</h2>
-                            <p class="organize__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
-                        </div>
-                        <a href="#" class="organize__button button button--primary">Try For Free</a>
+                <div class="features__items-container flex">
+                    <div class="features__item">
+                        <img src="img/features-figures.svg" alt="vector" class="features__icon">
+                        <h3 class="features__item-title">OpenType features Variable fonts</h3>
+                        <p class="features__item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
                     </div>
-                    <div class="organize__icon-container">
-                        <img src="img/macbook-pro-icon.svg" alt="Macbook Pro Icon" class="organize__icon">
+                    <div class="features__item">
+                        <img src="img/features-pencil.svg" alt="vector" class="features__icon">
+                        <h3 class="features__item-title">Design with real data</h3>
+                        <p class="features__item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                    </div>
+                    <div class="features__item">
+                        <img src="img/features-pen.svg" alt="vector" class="features__icon">
+                        <h3 class="features__item-title">Fastest way to take action</h3>
+                        <p class="features__item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
                     </div>
                 </div>
-            </section>
-            <!-- organize section ends  -->
+            </div>
+            <div class="features__video">
+                <video autoplay="" loop="" muted="" preload="auto" playsinline="" poster="posterimage.svg" controls class="features__video-element">
+                    <source src="https://theme.zdassets.com/theme_assets/9325143/d8f0d96a281421cb7615665b0d404912590abb51.webm" type="video/webm">
+                    <source src="https://theme.zdassets.com/theme_assets/9325143/0b00b82d681282b4b3c8869a4ae04702745ed66c.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
 
-            <!-- subscribe section starts  -->
-            <section class="subscribe">
-                <div class="subscribe__content">
-                    <div class="subscribe__icon-container">
-                        <img src="img/subscribe-pictures.svg" alt="Letter" class="subscribe__icon">
+        <!-- organize section starts  -->
+        <section class="organize">
+            <div class="organize__content">
+                <div class="organize__header">
+                    <div class="organize__text">
+                        <h2 class="organize__title">Fastest way to organize</h2>
+                        <p class="organize__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
                     </div>
-                    <div class="subscribe__header">
-                        <div class="subscribe__text">
-                            <p class="subscribe__subtitle">At your fingertips</p>
-                            <h2 class="subscribe__title">Lightning fast prototyping</h2>
-                        </div>
-                        <div class="subscribe__form form-subscribe">
-                            <p class="form-subscribe__title">Subscribe to our Newsletter</p>
-                            <p class="form-subscribe__subtitle">Available exclusivery on Figmaland</p>
-                            <form action="https://formspree.io/f/maygjpyb" method="post" class="form-subscribe__form">
-                                <input name="Email" id="email" type="email" placeholder="Your email" required class="form-subscribe__input">
-                                <button type="submit" class="form-subscribe__button button btn-m button--primary">Subscribe</button>
-                            </form>
-                        </div>
+                    <a href="#" class="organize__button button button--primary">Try For Free</a>
+                </div>
+                <div class="organize__icon-container">
+                    <img src="img/macbook-pro-icon.svg" alt="Macbook Pro Icon" class="organize__icon">
+                </div>
+            </div>
+        </section>
+        <!-- organize section ends  -->
+
+        <!-- subscribe section starts  -->
+        <section class="subscribe">
+            <div class="subscribe__content">
+                <div class="subscribe__icon-container">
+                    <img src="img/subscribe-pictures.svg" alt="Letter" class="subscribe__icon">
+                </div>
+                <div class="subscribe__header">
+                    <div class="subscribe__text">
+                        <p class="subscribe__subtitle">At your fingertips</p>
+                        <h2 class="subscribe__title">Lightning fast prototyping</h2>
+                    </div>
+                    <div class="subscribe__form form-subscribe">
+                        <p class="form-subscribe__title">Subscribe to our Newsletter</p>
+                        <p class="form-subscribe__subtitle">Available exclusivery on Figmaland</p>
+                        <form action="https://formspree.io/f/maygjpyb" method="post" class="form-subscribe__form">
+                            <input name="Email" id="email_subscribe" type="email" placeholder="Your email" required class="form-subscribe__input">
+                            <button type="submit" class="form-subscribe__button button btn-m button--primary">Subscribe</button>
+                        </form>
                     </div>
                 </div>
-            </section>
-            <!-- subscribe section ends  -->
+            </div>
+        </section>
+        <!-- subscribe section ends  -->
 
-            <!-- partners section starts  -->
-            <section id="about" class="partners">
-                <div class="partners__content">
-                    <div class="partners__header">
-                        <h2 class="partners__title">Partners</h2>
-                        <p class="partners__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
-                    </div>
-                    <div class="partners__companies companies-list">
-                        <div class="companies-list__company">
-                            <p class="companies-list__title">Google</p>
-                            <img src="img/google-logo.svg" alt="Google Logo" class="companies-list__logo">
-                        </div>
-                        <div class="companies-list__company">
-                            <p class="companies-list__title">Amazon</p>
-                            <img src="img/amazon-logo.svg" alt="Amazon Logo" class="companies-list__logo">
-                        </div>
-                        <div class="companies-list__company">
-                            <p class="companies-list__title">Microsoft</p>
-                            <img src="img/microsoft-logo.svg" alt="Microsoft Logo" class="companies-list__logo">
-                        </div>
-                        <div class="companies-list__company">
-                            <p class="companies-list__title">Uber</p>
-                            <img src="img/uber-logo.svg" alt="Uber Logo" class="companies-list__logo">
-                        </div>
-                        <div class="companies-list__company">
-                            <p class="companies-list__title">Dropbox</p>
-                            <img src="img/dropbox-logo.svg" alt="Dropbox Logo" class="companies-list__logo">
-                        </div>
-                        <div class="companies-list__company">
-                            <p class="companies-list__title">Google</p>
-                            <img src="img/google-logo.svg" alt="Google Logo" class="companies-list__logo">
-                        </div>
-                        <div class="companies-list__company">
-                            <p class="companies-list__title">Uber</p>
-                            <img src="img/uber-logo.svg" alt="Uber Logo" class="companies-list__logo">
-                        </div>
-                        <div class="companies-list__company">
-                            <p class="companies-list__title">Amazon</p>
-                            <img src="img/amazon-logo.svg" alt="Amazon Logo" class="companies-list__logo">
-                        </div>
-                    </div>
-                    <a href="#" class="companies__button button button--primary">Try For Free</a>
+        <!-- partners section starts  -->
+        <section id="about" class="partners">
+            <div class="partners__content">
+                <div class="partners__header">
+                    <h2 class="partners__title">Partners</h2>
+                    <p class="partners__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
                 </div>
-            </section>
-            <!-- partners section ends  -->
+                <div class="partners__companies companies-list">
+                    <div class="companies-list__company">
+                        <p class="companies-list__title">Google</p>
+                        <img src="img/google-logo.svg" alt="Google Logo" class="companies-list__logo">
+                    </div>
+                    <div class="companies-list__company">
+                        <p class="companies-list__title">Amazon</p>
+                        <img src="img/amazon-logo.svg" alt="Amazon Logo" class="companies-list__logo">
+                    </div>
+                    <div class="companies-list__company">
+                        <p class="companies-list__title">Microsoft</p>
+                        <img src="img/microsoft-logo.svg" alt="Microsoft Logo" class="companies-list__logo">
+                    </div>
+                    <div class="companies-list__company">
+                        <p class="companies-list__title">Uber</p>
+                        <img src="img/uber-logo.svg" alt="Uber Logo" class="companies-list__logo">
+                    </div>
+                    <div class="companies-list__company">
+                        <p class="companies-list__title">Dropbox</p>
+                        <img src="img/dropbox-logo.svg" alt="Dropbox Logo" class="companies-list__logo">
+                    </div>
+                    <div class="companies-list__company">
+                        <p class="companies-list__title">Google</p>
+                        <img src="img/google-logo.svg" alt="Google Logo" class="companies-list__logo">
+                    </div>
+                    <div class="companies-list__company">
+                        <p class="companies-list__title">Uber</p>
+                        <img src="img/uber-logo.svg" alt="Uber Logo" class="companies-list__logo">
+                    </div>
+                    <div class="companies-list__company">
+                        <p class="companies-list__title">Amazon</p>
+                        <img src="img/amazon-logo.svg" alt="Amazon Logo" class="companies-list__logo">
+                    </div>
+                </div>
+                <a href="#" class="companies__button button button--primary">Try For Free</a>
+            </div>
+        </section>
+        <!-- partners section ends  -->
 
-            <!-- testimonials section starts  -->
-            <section class="testimonials">
-                <div class="testimonials__content">
-                    <h2 class="testimonials__title">Testimonials</h2>
-                    <div class="testimonials__main">
-                        <img src="img/ibm-logo.svg" alt="IBM Logo" class="testimonials__logo">
-                        <p class="testimonials__subtitle">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
-                        <div class="testimonials__user-container">
-                            <img src="img/user-avatar.svg" alt="User`s photo" class="testimonials__user-images">
-                            <p class="testimonials__text">
-                                Organize across
-                                <br>
-                                <span>Ui designer</span>
+        <!-- testimonials section starts  -->
+        <section class="testimonials">
+            <div class="testimonials__content">
+                <h2 class="testimonials__title">Testimonials</h2>
+                <div class="testimonials__main">
+                    <img src="img/ibm-logo.svg" alt="IBM Logo" class="testimonials__logo">
+                    <p class="testimonials__subtitle">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                    <div class="testimonials__user-container">
+                        <img src="img/user-avatar.svg" alt="User`s photo" class="testimonials__user-images">
+                        <p class="testimonials__text">
+                            Organize across
+                            <br>
+                            <span>Ui designer</span>
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="testimonials__button button btn-l button--primary">More Testimonials</a>
+            </div>
+        </section>
+        <!-- testimonials section ends  -->
+
+        <!-- pricing section starts  -->
+        <section id="pricing" class="pricing">
+            <div class="pricing__content">
+                <div class="pricing__header">
+                    <h2 class="pricing__title">Pricing</h2>
+                    <p class="pricing__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                </div>
+                <div class="pricing__options payment-option">
+                    <div class="payment-option__container">
+                        <div class="payment-option__header">
+                            <h3 class="payment-option__title">FREE</h3>
+                            <p class="payment-option__subtitle">Organize across all apps by hand</p>
+                        </div>
+                        <div class="payment-option__price">
+                            <div class="payment-option__amount">0</div>
+                            <p class="payment-option__description">
+                                <span>$</span><br>
+                                Per Month
                             </p>
                         </div>
+                        <div class="payment-option__list-container">
+                            <ul class="payment-option__list">
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="payment-option__button button btn-ml button--primary">Order Now</a>
                     </div>
-                    <a href="#" class="testimonials__button button btn-l button--primary">More Testimonials</a>
-                </div>
-            </section>
-            <!-- testimonials section ends  -->
-
-            <!-- pricing section starts  -->
-            <section id="pricing" class="pricing">
-                <div class="pricing__content">
-                    <div class="pricing__header">
-                        <h2 class="pricing__title">Pricing</h2>
-                        <p class="pricing__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                    <div class="payment-option__container">
+                        <div class="payment-option__header">
+                            <h3 class="payment-option__title">STANDARD</h3>
+                            <p class="payment-option__subtitle">Organize across all apps by hand</p>
+                        </div>
+                        <div class="payment-option__price">
+                            <div class="payment-option__amount">10</div>
+                            <p class="payment-option__description">
+                                <span>$</span><br>
+                                Per Month
+                            </p>
+                        </div>
+                        <div class="payment-option__list-container">
+                            <ul class="payment-option__list">
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="payment-option__button button btn-ml button--primary">Order Now</a>
                     </div>
-                    <div class="pricing__options payment-option">
-                        <div class="payment-option__container">
-                            <div class="payment-option__header">
-                                <h3 class="payment-option__title">FREE</h3>
-                                <p class="payment-option__subtitle">Organize across all apps by hand</p>
-                            </div>
-                            <div class="payment-option__price">
-                                <div class="payment-option__amount">0</div>
-                                <p class="payment-option__description">
-                                    <span>$</span><br>
-                                    Per Month
-                                </p>
-                            </div>
-                            <div class="payment-option__list-container">
-                                <ul class="payment-option__list">
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="payment-option__button button btn-ml button--primary">Order Now</a>
+                    <div class="payment-option__container">
+                        <div class="payment-option__header">
+                            <h3 class="payment-option__title">BUSINESS</h3>
+                            <p class="payment-option__subtitle">Organize across all apps by hand</p>
                         </div>
-                        <div class="payment-option__container">
-                            <div class="payment-option__header">
-                                <h3 class="payment-option__title">STANDARD</h3>
-                                <p class="payment-option__subtitle">Organize across all apps by hand</p>
-                            </div>
-                            <div class="payment-option__price">
-                                <div class="payment-option__amount">10</div>
-                                <p class="payment-option__description">
-                                    <span>$</span><br>
-                                    Per Month
-                                </p>
-                            </div>
-                            <div class="payment-option__list-container">
-                                <ul class="payment-option__list">
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="payment-option__button button btn-ml button--primary">Order Now</a>
+                        <div class="payment-option__price">
+                            <div class="payment-option__amount">99</div>
+                            <p class="payment-option__description">
+                                <span>$</span><br>
+                                Per Month
+                            </p>
                         </div>
-                        <div class="payment-option__container">
-                            <div class="payment-option__header">
-                                <h3 class="payment-option__title">BUSINESS</h3>
-                                <p class="payment-option__subtitle">Organize across all apps by hand</p>
-                            </div>
-                            <div class="payment-option__price">
-                                <div class="payment-option__amount">99</div>
-                                <p class="payment-option__description">
-                                    <span>$</span><br>
-                                    Per Month
-                                </p>
-                            </div>
-                            <div class="payment-option__list-container">
-                                <ul class="payment-option__list">
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                    <li class="payment-option__item">Pricing Feature</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="payment-option__button button btn-ml button--primary">Order Now</a>
+                        <div class="payment-option__list-container">
+                            <ul class="payment-option__list">
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                                <li class="payment-option__item">Pricing Feature</li>
+                            </ul>
                         </div>
+                        <a href="#" class="payment-option__button button btn-ml button--primary">Order Now</a>
                     </div>
                 </div>
-            </section>
-            <!-- pricing section ends  -->
+            </div>
+        </section>
+        <!-- pricing section ends  -->
 
-            <!-- contact section starts  -->
-            <section id="contact"></section>
-            <!-- contact section ends  -->
-        </main>
-        <!-- main section ends  -->
+        <!-- contact section starts  -->
+        <section id="contact" class="contact">
+            <div class="contact__content">
+                <div class="contact__header">
+                    <h2 class="contact__title">Contact Us</h2>
+                    <p class="contact__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                </div>
+                <div class="contact__body">
+                    <div class="contact__form contact-form">
+                        <h3 class="contact-form__title">Contact Us</h3>
+                        <form action="https://formspree.io/f/maygjpyb" method="post" class="contact-form__form">
+                            <input name="first-name" id="first-name" type="text" placeholder="Your Name" required class="contact-form__input" />
+                            <input name="Email" id="email" type="email" placeholder="Your email" required class="contact-form__input">
+                            <textarea name="bio" id="bio" cols="25" rows="8" placeholder="Your Message..." class="contact-form__textarea"></textarea>
+                            <button type="submit" class="contact-form__button button btn-sm button--primary">Send</button>
+                        </form>
+                    </div>
+                    <div class="contact__info contact-info">
+                        <div class="contact-info__data">
+                            <div class="contact-info__item maxwidth">
+                                <div class="contact-info__icon-container">
+                                    <img src="img/location-vector-primary.svg" alt="Location icon" class="contact-info__icon-image">
+                                </div>
+                                <div class="contact-info__text">6386 Spring St Anchorage, Georgia 12473 United States</div>
+                            </div>
+                            <div class="contact-info__item">
+                                <div class="contact-info__icon-container">
+                                    <img src="img/phone-vector-primary.svg" alt="Phone icon" class="contact-info__icon-image">
+                                </div>
+                                <div class="contact-info__text">
+                                    <a href="tel:+2395550108" class="contact-info__link">(239) 555-0108</a>
+                                </div>
+                            </div>
+                            <div class="contact-info__item">
+                                <div class="contact-info__icon-container">
+                                    <img src="img/email-vector-primary.svg" alt="Letter icon" class="contact-info__icon-image">
+                                </div>
+                                <div class="contact-info__text">
+                                    <a href="mailto:willie.jennings@example.com" class="contact-info__link">willie.jennings@example.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-info__map-container">
+                            <iframe class="contact-info__map" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13216.417694974058!2d-83.38726414048621!3d33.32591018917387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f696e171ec7495%3A0xf9201ab26bc06228!2zU3ByaW5nIFN0LCBFYXRvbnRvbiwgR0EgMzEwMjQsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1693984533868!5m2!1suk!2sua" 
+                                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="contact-info__social-icons social-icons">
+                            <ul class="social-icons__list">
+                                <li class="social-icons__item">
+                                    <a class="social-icons__link" href="https://twitter.com/" target="_blank"><img src="img/twitter-icon-primary.svg" alt="twitter logo" class="social-icons__icon"></a>
+                                </li>
+                                <li class="social-icons__item">
+                                    <a class="social-icons__link" href="https://www.facebook.com/" target="_blank"><img src="img/facebook-icon-primary.svg" alt="facebook logo" class="social-icons__icon"></a>
+                                </li>
+                                <li class="social-icons__item">
+                                    <a class="social-icons__link" href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin-icon-primary.svg" alt="linkedin logo" class="social-icons__icon"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section ends  -->
+    </main>
+    <!-- main section ends  -->
 
-        <!-- footer section starts  -->
-        <footer class="footer">
-            <div class="footer__container">
-              <div class="footer__column">
-                    <h3 class="footer__column-title">Pages</h3>
-                    <ul class="footer__links">
-                        <li class="footer__link-item">
-                            <a href="#home" class="footer__link">Home</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#product" class="footer__link">Product</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#pricing" class="footer__link">Pricing</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#about" class="footer__link">About</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#contact" class="footer__link">Contact</a>
-                        </li>
-                    </ul>
-              </div>
-              <div class="footer__column">
-                    <h3 class="footer__column-title">Tomothy</h3>
-                    <ul class="footer__links">
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Eleanor Edwards</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Ted Robertson</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Annette Russell</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Jennie Mckinney</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Gloria Richards</a>
-                        </li>
-                    </ul>
-              </div>
-              <div class="footer__column">
-                    <h3 class="footer__column-title">Jane Black</h3>
-                    <ul class="footer__links">
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Philip Jones</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Product</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Colleen Russell</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Marvin Hawkins</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a href="#" class="footer__link">Bruce Simmmons</a>
-                        </li>
-                    </ul>
-              </div>
-              <div class="footer__column">
+    <!-- footer section starts  -->
+    <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__column">
+                <h3 class="footer__column-title">Pages</h3>
+                <ul class="footer__links">
+                    <li class="footer__link-item">
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#product" class="footer__link">Product</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#pricing" class="footer__link">Pricing</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+          </div>
+          <div class="footer__column">
+                <h3 class="footer__column-title">Tomothy</h3>
+                <ul class="footer__links">
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Eleanor Edwards</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Ted Robertson</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Annette Russell</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Jennie Mckinney</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Gloria Richards</a>
+                    </li>
+                </ul>
+          </div>
+          <div class="footer__column">
+                <h3 class="footer__column-title">Jane Black</h3>
+                <ul class="footer__links">
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Philip Jones</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Product</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Colleen Russell</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Marvin Hawkins</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer__link">Bruce Simmmons</a>
+                    </li>
+                </ul>
+          </div>
+          <div class="footer__column">
                 <div class="footer__contacts">
                     <div class="footer__adress-icon">
                         <img src="img/location-vector.svg" alt="Location icon">
                     </div>
-                    <div class="footer__adress-text">7480 Mockingbird Hill undefined</div>
+                    <div class="footer__adress-text">7480 Mockingbird Hill</div>
                 </div>
                 <div class="footer__contacts">
                     <div class="footer__tel-icon">
@@ -373,21 +437,20 @@
                 <div class="footer__contacts social-icons">
                     <ul class="social-icons__list">
                         <li class="social-icons__item">
-                            <a class="social-icons__link" href="#"><img src="img/twitter-icon.svg" alt="twitter logo"></a>
+                            <a class="social-icons__link" href="https://twitter.com/" target="_blank"><img src="img/twitter-icon.svg" alt="twitter logo" class="social-icons__icon"></a>
                         </li>
                         <li class="social-icons__item">
-                            <a class="social-icons__link" href="#"><img src="img/facebook-icon.svg" alt="facebook logo"></a>
+                            <a class="social-icons__link" href="https://www.facebook.com/" target="_blank"><img src="img/facebook-icon.svg" alt="facebook logo" class="social-icons__icon"></a>
                         </li>
                         <li class="social-icons__item">
-                            <a class="social-icons__link" href="#"><img src="img/linkedin-icon.svg" alt="linkedin logo"></a>
+                            <a class="social-icons__link" href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin-icon.svg" alt="linkedin logo" class="social-icons__icon"></a>
                         </li>
                     </ul>
                 </div>
-              </div>
-            </div>
-        </footer>
-        <!-- footer section ends -->
-    </div>
+          </div>
+        </div>
+    </footer>
+    <!-- footer section ends -->
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@ $minWidth: 320px;
 $maxWidth: 1640px;
 $maxWidthContainer: 1280px;
 $heightHeader: 156px;
-$heightFooter: 1280px;
+$heightFooter: 567px;
 
 /* Reset css*/
 * {
@@ -138,19 +138,25 @@ html {
 }
 .container {
 	max-width: $maxWidthContainer;
-	padding: 0 15px;;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 .header {
-	max-width: 1120px;
-	width: 100%;
+	max-width: $maxWidthContainer;
+	padding: 0 15px;
 	margin: 0 auto;
-	height: $heightHeader;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	&__container {
+		max-width: 1120px;
+		width: 100%;
+		margin: 0 auto;
+		height: $heightHeader;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 	&__menu {
+		width: 100%;
 		display: flex;
 		align-items: center;
 		gap: 20px;
@@ -161,6 +167,11 @@ html {
 		letter-spacing: .2px;
 		font-weight: 200;
 		padding: 10px;
+	}
+	&__menu-link:hover {
+		color: $primary;
+		text-shadow: #2090f991 2px 0 10px;
+		text-decoration: underline;
 	}
 	&__logo-container {
 		flex: 1 1 0;
@@ -177,6 +188,9 @@ html {
 	gap: 24px;
 }
 .home {
+	max-width: $maxWidthContainer;
+	padding: 0 15px;
+	margin: 0 auto;
 	display: flex;
     align-items: center;
 	&__background {
@@ -221,6 +235,9 @@ html {
 	}
 }
 .features {
+	max-width: $maxWidthContainer;
+	padding: 0 15px;
+	margin: 0 auto;
 	width: 100%;
 	&__content {
 		margin: 75px auto;
@@ -290,8 +307,10 @@ html {
 	}
 }
 .organize {
+	max-width: $maxWidthContainer;
+	margin: 0 auto;
 	width: 100%;
-	padding: 220px 0;
+	padding: 220px 15px;
 	&__content {
 		padding: 40px 0;
 		max-width: 1240px;
@@ -333,8 +352,10 @@ html {
 }
 .subscribe {
 	width: 100%;
+	max-width: $maxWidthContainer;
+	padding: 43px 15px;
+	margin: 0 auto;
 	min-height: 720x;
-	padding: 43px 0;
 	&__content {
 		width: 100%;
 		display: flex;
@@ -405,7 +426,9 @@ html {
 }
 .partners {
 	width: 100%;
-	padding: 80px 0;
+	max-width: $maxWidthContainer;
+	padding: 80px 15px;
+	margin: 0 auto;
 	&__content {
 		max-width: 1075px;
 		width: 100%;
@@ -453,7 +476,9 @@ html {
 }
 .testimonials {
 	width: 100%;
-	padding: 100px 0;
+	max-width: $maxWidthContainer;
+	padding: 100px 15px;
+	margin: 0 auto;
 	&__content {
 		max-width: 800px;
 		width: 100%;
@@ -502,10 +527,8 @@ html {
 }
 .pricing {
 	width: 100%;
-	padding: 100px 0;
 	background-color: $darkBlueColor;
-	position: absolute;
-    left: 0;
+	padding: 100px 15px;
 	&__content {
 		max-width: 1100px;
 		width: 100%;
@@ -613,4 +636,173 @@ html {
 	display: flex;
 	flex-direction: column;
 	gap: 22px;
+}
+.contact {
+	width: 100%;
+	max-width: $maxWidthContainer;
+	padding: 140px 15px 55px;
+	margin: 0 auto;
+	&__content {
+		max-width: 1230px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 50px 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+	&__header {
+		max-width: 500px;
+	}
+	&__title {
+		font-size: 45px;
+		line-height: 50px;
+		letter-spacing: .2px;
+		font-weight: 400;
+		padding: 10px;
+	}
+	&__subtitle {
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: .2px;
+		font-weight: 300;
+		padding: 10px;
+		margin-top: 7px;
+	}
+	&__body {
+		width: 100%;
+		display: flex;
+		gap: 50px;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.contact-form {
+	max-width: 453px;
+	padding: 52px 50px;
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	overflow: hidden;
+	border-radius: 12px;
+	box-shadow:  5px 4px 17px 8px rgb(221 217 213 / 30%), 5px 4px 17px 5px rgb(246 246 246);
+	&__title {
+		font-size: 18px;
+		line-height: 30px;
+		letter-spacing: .2px;
+		font-weight: 800;
+		margin-bottom: 45px;
+	}
+	&__form {
+		max-width: 353px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 45px;
+		justify-content: flex-start;
+	}
+	&__input {
+		width: 100%;
+		min-width: max-content;
+		max-width: 353px;
+		height: 52px;
+		border-radius: 25px;
+		border-color: $borderColor;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 52px;
+		background: $inputBackground;
+		color: $mainColor;
+		padding: 10px 10px 10px 30px;
+		margin-right: 5px;
+	}
+	&__textarea {
+		width: 100%;
+		min-width: max-content;
+		max-width: 353px;
+		border-color: $borderColor;
+		font-weight: 300;
+		font-size: 14px;
+		background: $inputBackground;
+		color: $mainColor;
+		padding: 10px 10px 10px 30px;
+		margin-right: 5px;
+	}
+}
+.contact-info {
+	max-width: 725px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	&__data {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 15px;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 200;
+	}
+	&__text {
+		padding: 10px;
+		margin-top: 10px;
+		line-height: 20px;
+	}
+	.maxwidth {
+		max-width: 43%;
+	}
+}
+.footer {
+	width: 100%;
+	background-color: $darkBlueColor;
+	color: white;
+	padding: 150px 15px;
+	&__container {
+		max-width: 990px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 20px;
+	}
+	&__column-title {
+		font-size: 18px;
+		line-height: 30px;
+		letter-spacing: .2px;
+		font-weight: 800;
+		padding: 10px;
+		margin-bottom: 15px;
+	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		font-size: 16px;
+		line-height: 28px;
+		letter-spacing: .2px;
+		font-weight: 300;
+	}
+	&__contacts {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 16px;
+	}
+	&__adress-icon {
+		margin-left: -7px;
+		img {
+			max-width: 40px;
+			height: auto;
+		}
+	}
+	&__tel-icon {
+		margin-right: 10px;
+	}
+	.social-icons {
+		padding: 15px 0;
+	}
 }
