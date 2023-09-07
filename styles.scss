@@ -612,6 +612,7 @@ html {
 		font-size: 14px;
 		line-height: 48px;
 		background: $inputBackground;
+		border: 1px solid $borderColor;
 		color: $mainColor;
 		padding: 10px 10px 10px 30px;
 		margin: 0 5px 15px 0;
@@ -996,6 +997,7 @@ html {
 		font-size: 14px;
 		line-height: 52px;
 		background: $inputBackground;
+		border: 1px solid $borderColor;
 		color: $mainColor;
 		padding: 10px 10px 10px 30px;
 		margin-right: 5px;
@@ -1004,7 +1006,7 @@ html {
 		width: 100%;
 		min-width: max-content;
 		max-width: 353px;
-		border-color: $borderColor;
+		border: 1px solid $borderColor;
 		font-weight: 300;
 		font-size: 14px;
 		background: $inputBackground;
